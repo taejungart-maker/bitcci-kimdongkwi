@@ -15,12 +15,6 @@ export default function ArtistBioPage() {
         >
           {/* Header */}
           <header className="text-center">
-            <p
-              className="text-[11px] tracking-[0.5em] text-gray-400 mb-4"
-              style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
-            >
-              작 가 약 력
-            </p>
             <h1
               className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wider"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
@@ -187,15 +181,6 @@ export default function ArtistBioPage() {
             </p>
           </section>
 
-          {/* 시안 안내 */}
-          <section className="mt-3 pt-6 border-t border-gray-200">
-            <p
-              className="text-[11px] text-gray-400 text-center"
-              style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
-            >
-              ※ 본 약력은 작가 제공 자료 기반 시안입니다. 최종본은 작가 컨펌 후 업데이트됩니다.
-            </p>
-          </section>
         </motion.div>
       </div>
     </div>
