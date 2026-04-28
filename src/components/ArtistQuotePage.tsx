@@ -67,16 +67,26 @@ export default function ArtistQuotePage() {
           className="h-[1px] bg-[#7c6aad]/40 my-12"
         />
 
-        {/* 작가 사인 (한글만) */}
-        <motion.p
+        {/* 작가 사인 */}
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 2.6 }}
-          className="text-[18px] text-gray-800 tracking-[0.4em] font-bold"
-          style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
+          className="flex flex-col items-center gap-1.5"
         >
-          김 동 귀
-        </motion.p>
+          <p
+            className="text-[18px] text-gray-800 tracking-[0.4em] font-bold"
+            style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
+          >
+            김 동 귀
+          </p>
+          <p
+            className="text-[10px] text-gray-400 tracking-[0.4em]"
+            style={{ fontFamily: "'Montserrat', sans-serif" }}
+          >
+            KIM DONG-GWI
+          </p>
+        </motion.div>
 
         {/* 보라색 도장 점 */}
         <motion.div

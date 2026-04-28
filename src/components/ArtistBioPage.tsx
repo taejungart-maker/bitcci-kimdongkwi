@@ -16,11 +16,17 @@ export default function ArtistBioPage() {
           {/* Header */}
           <header className="text-center">
             <h1
-              className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wider"
+              className="text-3xl md:text-4xl font-bold text-gray-800 mb-2 tracking-wider"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
               김동귀
             </h1>
+            <p
+              className="text-sm tracking-[0.3em] text-gray-500"
+              style={{ fontFamily: "'Montserrat', sans-serif" }}
+            >
+              KIM DONG-GWI
+            </p>
             <div className="w-12 h-[1px] bg-[#7c6aad]/40 mx-auto mt-6"></div>
           </header>
 
