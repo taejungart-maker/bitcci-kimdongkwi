@@ -86,10 +86,10 @@ export default function CoverPage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: [0, 0.6, 0] }}
         transition={{ duration: 2, delay: 8, repeat: Infinity, repeatDelay: 1 }}
-        className="absolute bottom-10 text-white/50 text-xs tracking-widest"
-        style={{ fontFamily: "'Montserrat', sans-serif" }}
+        className="absolute bottom-10 text-white/50 text-xs tracking-[0.4em]"
+        style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
       >
-        SWIPE →
+        넘 겨 보 기  →
       </motion.div>
     </div>
   );

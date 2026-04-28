@@ -40,15 +40,15 @@ export default function EndingPage() {
         className="relative z-10 w-full h-full flex items-center justify-center px-8"
       >
         <div className="text-center max-w-md">
-          {/* Thank you 라벨 */}
+          {/* 감사 인사 라벨 */}
           <motion.p
-            initial={{ opacity: 0, letterSpacing: '0.6em' }}
-            animate={{ opacity: 0.6, letterSpacing: '0.4em' }}
+            initial={{ opacity: 0, letterSpacing: '0.7em' }}
+            animate={{ opacity: 0.55, letterSpacing: '0.5em' }}
             transition={{ duration: 1.5, delay: 0.5 }}
-            className="text-white text-xs uppercase mb-7"
-            style={{ fontFamily: "'Montserrat', sans-serif" }}
+            className="text-white text-[11px] mb-7"
+            style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
           >
-            Thank You
+            감 사 합 니 다
           </motion.p>
 
           {/* 메인 타이틀 */}
@@ -63,16 +63,6 @@ export default function EndingPage() {
             <span className="text-4xl md:text-5xl">공방으로의 초대</span>
           </motion.h2>
 
-          {/* 영문 부제 */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 0.5 }}
-            transition={{ duration: 1, delay: 1.5 }}
-            className="text-white text-[11px] tracking-[0.5em] uppercase mt-4"
-            style={{ fontFamily: "'Montserrat', sans-serif" }}
-          >
-            Atelier · Ungseok
-          </motion.p>
 
           {/* 가는 라인 */}
           <motion.div
@@ -132,10 +122,10 @@ export default function EndingPage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.3 }}
         transition={{ duration: 1, delay: 3 }}
-        className="absolute bottom-4 right-5 text-white text-[10px] tracking-[0.2em]"
-        style={{ fontFamily: "'Montserrat', sans-serif" }}
+        className="absolute bottom-4 right-5 text-white text-[10px] tracking-[0.3em]"
+        style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
       >
-        UNGSEOK ATELIER, SANCHEONG
+        웅석공방 · 산청
       </motion.p>
     </div>
   );

@@ -16,24 +16,18 @@ export default function ArtistBioPage() {
           {/* Header */}
           <header className="text-center">
             <p
-              className="text-xs tracking-[0.4em] text-gray-400 mb-3 uppercase"
-              style={{ fontFamily: "'Montserrat', sans-serif" }}
+              className="text-[11px] tracking-[0.5em] text-gray-400 mb-4"
+              style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
-              Artist
+              작 가 약 력
             </p>
             <h1
-              className="text-3xl md:text-4xl font-bold text-gray-800 mb-2 tracking-wider"
+              className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wider"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
               김동귀
             </h1>
-            <p
-              className="text-sm tracking-[0.3em] text-gray-500"
-              style={{ fontFamily: "'Montserrat', sans-serif" }}
-            >
-              KIM DONG-GWI
-            </p>
-            <div className="w-12 h-[1px] bg-gray-300 mx-auto mt-6"></div>
+            <div className="w-12 h-[1px] bg-[#7c6aad]/40 mx-auto mt-6"></div>
           </header>
 
           {/* 학력 & 직책 */}

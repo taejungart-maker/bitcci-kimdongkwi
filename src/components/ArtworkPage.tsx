@@ -75,42 +75,41 @@ export default function ArtworkPage({ artwork }: ArtworkPageProps) {
         transition={{ duration: 0.5, delay: 0.25 }}
         className="w-full text-center shrink-0 px-5 pt-1 pb-1"
       >
-        {/* 작가명 + 악센트 라인 */}
+        {/* 작가명 (작게, 위) */}
         {artwork.artist && (
-          <div className="mb-2">
-            <p
-              className="text-[19px] font-bold tracking-wider mb-1.5"
-              style={{ fontFamily: "'Noto Sans KR', sans-serif", color: textPrimary }}
-            >
-              {artwork.artist}
-            </p>
-            <div
-              className="w-6 h-[2px] mx-auto rounded-full"
-              style={{ backgroundColor: accentColor }}
-            />
-          </div>
+          <p
+            className="text-[12px] tracking-[0.5em] mb-3 opacity-70"
+            style={{ fontFamily: "'Noto Sans KR', sans-serif", color: textPrimary }}
+          >
+            {artwork.artist}
+          </p>
         )}
-        {/* 제목 */}
+        {/* 제목 (인용구 스타일 - Noto Serif italic, 강조) */}
         <p
-          className="text-[16px] leading-relaxed mb-1.5 whitespace-pre-line"
+          className="text-[19px] md:text-[21px] leading-relaxed mb-3 whitespace-pre-line tracking-wide"
           style={{
             fontFamily: "'Noto Serif', 'Noto Sans KR', serif",
             fontStyle: 'italic',
-            color: textSecondary,
+            color: textPrimary,
           }}
         >
           {artwork.title}
         </p>
-        {/* 재료 / 크기 / 연도 */}
+        {/* 보라 라인 (인용구 페이지와 통일) */}
+        <div
+          className="w-8 h-[1px] mx-auto mb-3"
+          style={{ backgroundColor: accentColor, opacity: 0.5 }}
+        />
+        {/* 재료 / 크기 / 연도 (한글, 차분한 톤) */}
         <p
           className="text-[12.5px] leading-relaxed tracking-wider"
           style={{
-            fontFamily: "'Montserrat', sans-serif",
+            fontFamily: "'Noto Sans KR', sans-serif",
             color: textSecondary,
-            opacity: 0.75,
+            opacity: 0.7,
           }}
         >
-          {artwork.material}, {artwork.size}, {artwork.year}
+          {artwork.material} · {artwork.size} · {artwork.year}
         </p>
       </motion.div>
 
