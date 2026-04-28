@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect, useMemo } from 'react';
 import { GlobalErrorBoundary } from './components/GlobalErrorBoundary';
 import CoverPage from './components/CoverPage';
-import PosterPage from './components/PosterPage';
-import ForewordPage from './components/ForewordPage';
+import ArtistBioPage from './components/ArtistBioPage';
+import ArtistAchievementsPage from './components/ArtistAchievementsPage';
 import ArtworkPage from './components/ArtworkPage';
 import EndingPage from './components/EndingPage';
 import { exhibition } from './data/exhibition';
@@ -263,14 +263,14 @@ function AppContent() {
           {isVisible(0) && <CoverPage />}
         </div>
 
-        {/* Page 2: Poster */}
+        {/* Page 2: 작가 약력 */}
         <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
-          {isVisible(1) && <PosterPage />}
+          {isVisible(1) && <ArtistBioPage />}
         </div>
 
-        {/* Page 3: Foreword */}
+        {/* Page 3: 전시·수상·경력 */}
         <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
-          {isVisible(2) && <ForewordPage />}
+          {isVisible(2) && <ArtistAchievementsPage />}
         </div>
 
         {/* Artwork Pages */}
