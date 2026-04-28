@@ -37,14 +37,11 @@ function AppContent() {
   const isVisible = (index: number) => Math.abs(currentPage - index) <= RENDER_RANGE;
 
   // 현재 페이지의 배경색 계산 (페이지 인디케이터 스타일링용)
+  // 작품 페이지 모두 흰 배경으로 통일했으므로 표지·엔딩만 어두움
   const currentBgIsDark = useMemo(() => {
     if (currentPage === 0) return true; // cover
     if (currentPage === TOTAL_PAGES - 1) return true; // ending
-    if (currentPage >= 3 && currentPage < TOTAL_PAGES - 1) {
-      const artworkIndex = currentPage - 3;
-      return exhibition.artworks[artworkIndex]?.darkBg ?? false;
-    }
-    return false;
+    return false; // 작가 약력·경력·작품 페이지 모두 흰 배경
   }, [currentPage]);
 
   // Initialize BGM + page flip sound
