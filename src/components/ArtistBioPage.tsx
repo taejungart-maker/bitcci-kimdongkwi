@@ -193,21 +193,10 @@ export default function ArtistBioPage() {
             </p>
           </section>
 
-          {/* 작가 노트 */}
+          {/* 시안 안내 */}
           <section className="mt-3 pt-6 border-t border-gray-200">
             <p
-              className="text-[14px] text-gray-500 leading-[2] text-center break-keep"
-              style={{
-                fontFamily: "'Noto Serif', 'Noto Sans KR', serif",
-                fontStyle: 'italic',
-              }}
-            >
-              "색동목 안료로 한국 고유의 결과 빛을 빚어내며,
-              <br />
-              전통의 호흡을 오늘에 잇는다."
-            </p>
-            <p
-              className="text-[11px] text-gray-400 text-center mt-6"
+              className="text-[11px] text-gray-400 text-center"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
               ※ 본 약력은 작가 제공 자료 기반 시안입니다. 최종본은 작가 컨펌 후 업데이트됩니다.

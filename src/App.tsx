@@ -2,12 +2,13 @@ import { useState, useRef, useEffect, useMemo } from 'react';
 import { GlobalErrorBoundary } from './components/GlobalErrorBoundary';
 import CoverPage from './components/CoverPage';
 import ArtistBioPage from './components/ArtistBioPage';
+import ArtistQuotePage from './components/ArtistQuotePage';
 import ArtworkPage from './components/ArtworkPage';
 import EndingPage from './components/EndingPage';
 import { exhibition } from './data/exhibition';
 
-// cover + artist + artworks + ending
-const TOTAL_PAGES = 3 + exhibition.artworks.length;
+// cover + artist bio + artist quote + artworks + ending
+const TOTAL_PAGES = 4 + exhibition.artworks.length;
 
 export default function App() {
   return (
@@ -264,9 +265,14 @@ function AppContent() {
           {isVisible(1) && <ArtistBioPage />}
         </div>
 
+        {/* Page 3: 작가 시그니처 인용구 */}
+        <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
+          {isVisible(2) && <ArtistQuotePage />}
+        </div>
+
         {/* Artwork Pages */}
         {exhibition.artworks.map((artwork, index) => {
-          const pageIndex = index + 2;
+          const pageIndex = index + 3;
           // darkBg가 아닌 작품은 홀짝으로 녹색/보라색 배경 자동 배정
           const themed = {
             ...artwork,
