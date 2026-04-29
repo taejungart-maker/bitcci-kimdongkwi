@@ -16,8 +16,8 @@ export default function CoverPage() {
           alt={exhibition.title}
           className="w-full h-full object-cover"
           loading="eager"
-          initial={{ filter: 'brightness(0.18) saturate(0.55) blur(3px)' }}
-          animate={{ filter: 'brightness(1) saturate(1) blur(0px)' }}
+          initial={{ filter: 'brightness(0.18) saturate(0.55)' }}
+          animate={{ filter: 'brightness(1) saturate(1)' }}
           transition={{ duration: 3.4, delay: 0.4, ease: 'easeOut' }}
         />
       </motion.div>
@@ -46,21 +46,15 @@ export default function CoverPage() {
         }}
       />
 
-      {/* 텍스트 주변만 자연스러운 블러 + 약한 어둠 (타원형 radial mask, 사각형 X) */}
+      {/* 텍스트 주변 약한 어둠 (블러 제거, 텍스트 가독성용 그라데이션만) */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.8, delay: 1.4 }}
         className="absolute inset-0 pointer-events-none"
         style={{
-          backdropFilter: 'blur(6px)',
-          WebkitBackdropFilter: 'blur(6px)',
-          maskImage:
-            'radial-gradient(ellipse 55% 62% at 50% 50%, black 25%, rgba(0,0,0,0.7) 55%, transparent 85%)',
-          WebkitMaskImage:
-            'radial-gradient(ellipse 55% 62% at 50% 50%, black 25%, rgba(0,0,0,0.7) 55%, transparent 85%)',
           background:
-            'radial-gradient(ellipse 55% 62% at 50% 50%, rgba(0,0,0,0.42) 0%, rgba(0,0,0,0.18) 55%, transparent 85%)',
+            'radial-gradient(ellipse 55% 62% at 50% 50%, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.2) 55%, transparent 85%)',
         }}
       />
 
