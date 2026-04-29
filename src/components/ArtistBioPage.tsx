@@ -6,23 +6,31 @@ export default function ArtistBioPage() {
       className="w-full h-full bg-white overflow-y-auto px-6 py-12 relative"
       style={{ touchAction: 'pan-y pinch-zoom' }}
     >
-      {/* 우측 작가 인물 사진 - 데스크탑 (radial 마스크로 사방 자연스럽게) */}
+      {/* 우측 작가 인물 사진 - 데스크탑 (인물 + 비네팅 흰색 오버레이) */}
       <div
         className="pointer-events-none absolute top-0 right-0 h-full hidden md:block"
-        style={{
-          width: '55%',
-          backgroundImage: `url(${import.meta.env.BASE_URL}profile.jpg)`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'right center',
-          backgroundRepeat: 'no-repeat',
-          opacity: 0.25,
-          maskImage:
-            'radial-gradient(ellipse 95% 90% at 100% 45%, rgba(0,0,0,1) 25%, rgba(0,0,0,0.7) 55%, transparent 95%)',
-          WebkitMaskImage:
-            'radial-gradient(ellipse 95% 90% at 100% 45%, rgba(0,0,0,1) 25%, rgba(0,0,0,0.7) 55%, transparent 95%)',
-          zIndex: 0,
-        }}
-      />
+        style={{ width: '60%', zIndex: 0 }}
+      >
+        {/* 인물 레이어 */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url(${import.meta.env.BASE_URL}profile.jpg)`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'right center',
+            backgroundRepeat: 'no-repeat',
+            opacity: 0.32,
+          }}
+        />
+        {/* 비네팅 오버레이 — 사방으로 흰색 페이드, 일직선 완전 차단 */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              'radial-gradient(ellipse 65% 70% at 85% 50%, transparent 15%, rgba(255,255,255,0.35) 55%, rgba(255,255,255,0.9) 85%, rgba(255,255,255,1) 100%)',
+          }}
+        />
+      </div>
       <div className="max-w-2xl mx-auto flex flex-col gap-7 pb-20 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -30,16 +38,30 @@ export default function ArtistBioPage() {
           transition={{ duration: 0.5, ease: 'easeOut' }}
           className="flex flex-col gap-7"
         >
-          {/* 모바일 전용 - 작가 인물 사진을 상단에 또렷하게 노출 */}
-          <div className="md:hidden -mx-6 -mt-12 mb-1 relative aspect-[4/3] overflow-hidden bg-[#f5f1ea]">
+          {/* 모바일 전용 - 인물 카드 + 비네팅 (사각형 경계 사방 제거) */}
+          <div className="md:hidden -mx-6 -mt-12 mb-1 relative aspect-[4/5] overflow-hidden bg-white">
             <img
               src={`${import.meta.env.BASE_URL}profile.jpg`}
               alt="김동귀 작가"
               className="w-full h-full object-cover"
-              style={{ objectPosition: 'center 28%' }}
+              style={{ objectPosition: 'center 25%' }}
             />
-            {/* 하단 자연스럽게 페이드 → 본문 텍스트로 연결 */}
-            <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-white via-white/70 to-transparent" />
+            {/* 비네팅 — 인물 중심은 또렷, 사방 흰색으로 페이드 */}
+            <div
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background:
+                  'radial-gradient(ellipse 70% 70% at 50% 42%, transparent 35%, rgba(255,255,255,0.25) 60%, rgba(255,255,255,0.85) 88%, rgba(255,255,255,1) 100%)',
+              }}
+            />
+            {/* 하단 추가 페이드 — 본문 텍스트로 자연스럽게 */}
+            <div
+              className="absolute inset-x-0 bottom-0 h-1/2 pointer-events-none"
+              style={{
+                background:
+                  'linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 35%, rgba(255,255,255,0) 100%)',
+              }}
+            />
           </div>
 
           {/* Header */}
