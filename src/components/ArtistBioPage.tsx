@@ -3,10 +3,45 @@ import { motion } from 'motion/react';
 export default function ArtistBioPage() {
   return (
     <div
-      className="w-full h-full bg-white overflow-y-auto px-6 py-12"
+      className="w-full h-full bg-white overflow-y-auto px-6 py-12 relative"
       style={{ touchAction: 'pan-y pinch-zoom' }}
     >
-      <div className="max-w-2xl mx-auto flex flex-col gap-7 pb-20">
+      {/* 우측 작가 인물 사진 - 배경처럼 희미하게 */}
+      <div
+        className="pointer-events-none absolute top-0 right-0 h-full hidden md:block"
+        style={{
+          width: '52%',
+          backgroundImage: `url(${import.meta.env.BASE_URL}profile.jpg)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'right center',
+          backgroundRepeat: 'no-repeat',
+          opacity: 0.22,
+          maskImage:
+            'linear-gradient(to left, rgba(0,0,0,1) 30%, rgba(0,0,0,0.7) 60%, transparent 100%)',
+          WebkitMaskImage:
+            'linear-gradient(to left, rgba(0,0,0,1) 30%, rgba(0,0,0,0.7) 60%, transparent 100%)',
+          zIndex: 0,
+        }}
+      />
+      {/* 모바일에서는 더 희미하게 + 우측 작게 */}
+      <div
+        className="pointer-events-none absolute top-0 right-0 h-full md:hidden"
+        style={{
+          width: '70%',
+          backgroundImage: `url(${import.meta.env.BASE_URL}profile.jpg)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'right center',
+          backgroundRepeat: 'no-repeat',
+          opacity: 0.13,
+          maskImage:
+            'linear-gradient(to left, rgba(0,0,0,1) 25%, rgba(0,0,0,0.6) 55%, transparent 100%)',
+          WebkitMaskImage:
+            'linear-gradient(to left, rgba(0,0,0,1) 25%, rgba(0,0,0,0.6) 55%, transparent 100%)',
+          zIndex: 0,
+        }}
+      />
+
+      <div className="max-w-2xl mx-auto flex flex-col gap-7 pb-20 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
