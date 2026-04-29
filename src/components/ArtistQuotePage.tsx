@@ -32,34 +32,35 @@ export default function ArtistQuotePage() {
 
       {/* 메인 컨텐츠 */}
       <div className="relative z-10 max-w-2xl mx-auto text-center flex flex-col items-center px-4">
-        {/* 인용구 - 한 줄씩 등장 (자연스러운 의미 단위 2줄) */}
+        {/* 인용구 1 */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5, ease: 'easeOut' }}
-          className="text-[17px] md:text-[22px] text-gray-700 leading-[2.2] tracking-wide break-keep mb-3"
+          className="text-[19px] md:text-[24px] text-gray-700 leading-[2.2] tracking-wide break-keep mb-3"
           style={{
-            fontFamily: "'Noto Serif', 'Noto Sans KR', serif",
-            fontStyle: 'italic',
-          }}
-        >
-          색동목 안료로 한국 고유의 결과 빛을 빚어내며,
-        </motion.p>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1.3, ease: 'easeOut' }}
-          className="text-[17px] md:text-[22px] text-gray-700 leading-[2.2] tracking-wide break-keep"
-          style={{
-            fontFamily: "'Noto Serif', 'Noto Sans KR', serif",
-            fontStyle: 'italic',
+            fontFamily: "'Noto Serif KR', 'Noto Serif', 'Noto Sans KR', serif",
+            fontWeight: 300,
           }}
         >
           전통의 호흡을 오늘에 잇는다.
         </motion.p>
 
-        {/* 가는 라인 - 좌우로 그려짐 */}
+        {/* 인용구 2 */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1.3, ease: 'easeOut' }}
+          className="text-[19px] md:text-[24px] text-gray-700 leading-[2.2] tracking-wide break-keep"
+          style={{
+            fontFamily: "'Noto Serif KR', 'Noto Serif', 'Noto Sans KR', serif",
+            fontWeight: 300,
+          }}
+        >
+          전통의 흐름을 오늘에 잇는다.
+        </motion.p>
+
+        {/* 가는 라인 */}
         <motion.div
           initial={{ width: 0 }}
           animate={{ width: '64px' }}
@@ -67,24 +68,31 @@ export default function ArtistQuotePage() {
           className="h-[1px] bg-[#7c6aad]/40 my-12"
         />
 
-        {/* 작가 사인 */}
+        {/* 사자성어 서명 — 憮古昌新 */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 2.6 }}
-          className="flex flex-col items-center gap-1.5"
+          className="flex flex-col items-center gap-2"
         >
+          <div className="flex items-center justify-center gap-4">
+            <span className="text-[#7c6aad]/45 text-[18px] font-light">—</span>
+            <span
+              className="text-[26px] md:text-[30px] text-gray-800 tracking-[0.25em] pl-[0.25em]"
+              style={{
+                fontFamily: "'Noto Serif KR', 'Noto Serif', serif",
+                fontWeight: 500,
+              }}
+            >
+              憮古昌新
+            </span>
+            <span className="text-[#7c6aad]/45 text-[18px] font-light">—</span>
+          </div>
           <p
-            className="text-[18px] text-gray-800 tracking-[0.4em] font-bold"
+            className="text-[11px] text-gray-400 tracking-[0.5em] mt-1"
             style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
           >
-            김 동 귀
-          </p>
-          <p
-            className="text-[10px] text-gray-400 tracking-[0.4em]"
-            style={{ fontFamily: "'Montserrat', sans-serif" }}
-          >
-            KIM DONG-GWI
+            무 고 창 신
           </p>
         </motion.div>
 
@@ -92,8 +100,8 @@ export default function ArtistQuotePage() {
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 3.1, ease: 'backOut' }}
-          className="mt-5 w-2 h-2 rounded-full"
+          transition={{ duration: 0.8, delay: 3.2, ease: 'backOut' }}
+          className="mt-6 w-2 h-2 rounded-full"
           style={{ backgroundColor: '#7c6aad' }}
         />
       </div>

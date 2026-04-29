@@ -43,7 +43,7 @@ export default function ArtistBioPage() {
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
               <li>동아대학교 대학원 졸업</li>
-              <li>경상남도 무형문화재 제29호 소목장 (목상감)</li>
+              <li>경상남도 무형유산 제29호 소목장 (목상감)</li>
               <li>경상국립대학교 명예교수</li>
               <li>웅석공방 대표 · 김동귀목조형 연구소장</li>
             </ul>
@@ -61,11 +61,15 @@ export default function ArtistBioPage() {
               className="text-[15px] text-gray-700 leading-[1.9] flex flex-col gap-1"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
-              <li>개인전 25회 (국내외)</li>
+              <li>개인전 29회 (국내외)</li>
               <li>대한민국미술대전 초대작가</li>
               <li>대한민국미술대전 운영위원·심사위원 역임</li>
-              <li>대한민국 공예품대전 심사위원장</li>
+              <li>대한민국 공예품대전 심사위원장 역임</li>
+              <li>대한민국 등공모대전 심사위원장·운영위원장 역임</li>
+              <li>개천미술대상전 운영위원장·심사위원장 역임</li>
               <li>국제 차문화대전 심사위원</li>
+              <li>청주 공예비엔날레 초대전</li>
+              <li>진주 전통공예 비엔날레 초대전</li>
             </ul>
           </section>
 
@@ -82,6 +86,10 @@ export default function ArtistBioPage() {
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
               <li>
+                <span className="text-gray-500 mr-3 inline-block w-[80px]">1990–1999</span>
+                대한민국미술대전 연 10회 수상
+              </li>
+              <li>
                 <span className="text-gray-500 mr-3 inline-block w-[80px]">1995</span>
                 전국공예품경진대회 대상
               </li>
@@ -90,20 +98,20 @@ export default function ArtistBioPage() {
                 통상산업부장관상
               </li>
               <li>
-                <span className="text-gray-500 mr-3 inline-block w-[80px]">1990–1999</span>
-                대한민국미술대전 연 10회 수상
+                <span className="text-gray-500 mr-3 inline-block w-[80px]">1997–2005</span>
+                경상남도 미술대전 추천·초대작가상, 경남미술인상
               </li>
               <li>
                 <span className="text-gray-500 mr-3 inline-block w-[80px]">2004</span>
                 한국공예가협회상
               </li>
               <li>
-                <span className="text-gray-500 mr-3 inline-block w-[80px]">—</span>
+                <span className="text-gray-500 mr-3 inline-block w-[80px]">2018</span>
                 경상남도문화상 (조형예술)
               </li>
               <li>
-                <span className="text-gray-500 mr-3 inline-block w-[80px]">—</span>
-                경상남도 미술대전 추천·초대작가상, 경남미술인상
+                <span className="text-gray-500 mr-3 inline-block w-[80px]">2019</span>
+                대통령 표창
               </li>
             </ul>
           </section>

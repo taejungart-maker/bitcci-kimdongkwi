@@ -16,6 +16,9 @@ export interface Artwork {
 
 export interface ExhibitionData {
   title: string;
+  titleEn: string;
+  subtitle: string;
+  subtitleEn: string;
   period: string;
   venue: string;
   opening: string;
@@ -29,9 +32,12 @@ export interface ExhibitionData {
 }
 
 export const exhibition: ExhibitionData = {
-  title: "김동귀 작가 서울 전시",
-  period: "(전시 일정 — 추후 업데이트)",
-  venue: "(전시 장소 — 추후 업데이트)",
+  title: "김동귀 개인전",
+  titleEn: "Kim Dong-Gwi Solo Exhibition",
+  subtitle: "색동목, 시간의 결을 짓다",
+  subtitleEn: "Saekdongmok: Layers of Time",
+  period: "2026년 5월 6일 — 5월 11일",
+  venue: "인사아트센터 경남갤러리",
   opening: "(오프닝 일시 — 추후 업데이트)",
   organizer: "(주최/기획 — 추후 업데이트)",
   organizerContact: "",
