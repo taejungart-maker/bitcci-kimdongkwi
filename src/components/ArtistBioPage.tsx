@@ -23,24 +23,6 @@ export default function ArtistBioPage() {
           zIndex: 0,
         }}
       />
-      {/* 모바일에서는 살짝 더 희미하게 + radial */}
-      <div
-        className="pointer-events-none absolute top-0 right-0 h-full md:hidden"
-        style={{
-          width: '75%',
-          backgroundImage: `url(${import.meta.env.BASE_URL}profile.jpg)`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'right center',
-          backgroundRepeat: 'no-repeat',
-          opacity: 0.20,
-          maskImage:
-            'radial-gradient(ellipse 100% 85% at 100% 45%, rgba(0,0,0,1) 20%, rgba(0,0,0,0.6) 55%, transparent 95%)',
-          WebkitMaskImage:
-            'radial-gradient(ellipse 100% 85% at 100% 45%, rgba(0,0,0,1) 20%, rgba(0,0,0,0.6) 55%, transparent 95%)',
-          zIndex: 0,
-        }}
-      />
-
       <div className="max-w-2xl mx-auto flex flex-col gap-7 pb-20 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -48,6 +30,18 @@ export default function ArtistBioPage() {
           transition={{ duration: 0.5, ease: 'easeOut' }}
           className="flex flex-col gap-7"
         >
+          {/* 모바일 전용 - 작가 인물 사진을 상단에 또렷하게 노출 */}
+          <div className="md:hidden -mx-6 -mt-12 mb-1 relative aspect-[4/3] overflow-hidden bg-[#f5f1ea]">
+            <img
+              src={`${import.meta.env.BASE_URL}profile.jpg`}
+              alt="김동귀 작가"
+              className="w-full h-full object-cover"
+              style={{ objectPosition: 'center 28%' }}
+            />
+            {/* 하단 자연스럽게 페이드 → 본문 텍스트로 연결 */}
+            <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-white via-white/70 to-transparent" />
+          </div>
+
           {/* Header */}
           <header className="text-center">
             <h1
