@@ -66,7 +66,7 @@ export const exhibition: ExhibitionData = {
       title: "달항아리 1",
       material: "색동목 안료",
       size: "162×112",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/1.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -77,7 +77,7 @@ export const exhibition: ExhibitionData = {
       title: "달항아리 2",
       material: "색동목 안료",
       size: "82×82",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/2.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -88,7 +88,7 @@ export const exhibition: ExhibitionData = {
       title: "달항아리 3",
       material: "색동목 안료",
       size: "60×60",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/3.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -99,7 +99,7 @@ export const exhibition: ExhibitionData = {
       title: "달항아리 4",
       material: "색동목 안료",
       size: "60×60",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/4.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -110,7 +110,7 @@ export const exhibition: ExhibitionData = {
       title: "달항아리 5",
       material: "색동목 안료",
       size: "60×60",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/5.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -121,7 +121,7 @@ export const exhibition: ExhibitionData = {
       title: "달항아리 6",
       material: "색동목 안료",
       size: "60×60",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/6.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -132,7 +132,7 @@ export const exhibition: ExhibitionData = {
       title: "달항아리 7",
       material: "색동목 안료",
       size: "60×60",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/7.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -143,7 +143,7 @@ export const exhibition: ExhibitionData = {
       title: "차그릇 1",
       material: "색동목 안료",
       size: "38×38",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/8.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -154,7 +154,7 @@ export const exhibition: ExhibitionData = {
       title: "차그릇 2",
       material: "색동목 안료",
       size: "38×38",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/9.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -165,7 +165,7 @@ export const exhibition: ExhibitionData = {
       title: "노을 1",
       material: "색동목 안료",
       size: "30×120",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/10.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -176,7 +176,7 @@ export const exhibition: ExhibitionData = {
       title: "일출1",
       material: "색동목 안료",
       size: "30×120",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/11.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -187,7 +187,7 @@ export const exhibition: ExhibitionData = {
       title: "노을 2",
       material: "색동목 안료",
       size: "132×92",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/12.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -198,7 +198,7 @@ export const exhibition: ExhibitionData = {
       title: "일출 2",
       material: "색동목 안료",
       size: "50×180",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/13.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -209,7 +209,7 @@ export const exhibition: ExhibitionData = {
       title: "노을 3",
       material: "색동목 안료",
       size: "35×35",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/14.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -220,7 +220,7 @@ export const exhibition: ExhibitionData = {
       title: "노을 4",
       material: "색동목 안료",
       size: "35×35",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/15.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -231,7 +231,7 @@ export const exhibition: ExhibitionData = {
       title: "노을 5",
       material: "색동목 안료",
       size: "35×35",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/16.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -242,7 +242,7 @@ export const exhibition: ExhibitionData = {
       title: "비오는 날",
       material: "색동목 안료",
       size: "35×35",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/17.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -253,7 +253,7 @@ export const exhibition: ExhibitionData = {
       title: "한국의 미 -창호",
       material: "색동목 안료",
       size: "50×70",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/18.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -264,7 +264,7 @@ export const exhibition: ExhibitionData = {
       title: "한국의 미 창호",
       material: "색동목 안료",
       size: "50×70",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/19.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -275,7 +275,7 @@ export const exhibition: ExhibitionData = {
       title: "한국의 미-창호",
       material: "색동목 안료",
       size: "35×45",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/20.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -286,7 +286,7 @@ export const exhibition: ExhibitionData = {
       title: "한국의 미- 단청",
       material: "색동목 안료",
       size: "60×60",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/21.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -297,7 +297,7 @@ export const exhibition: ExhibitionData = {
       title: "한국의 미 -건축",
       material: "색동목 안료",
       size: "45×45",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/22.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -308,7 +308,7 @@ export const exhibition: ExhibitionData = {
       title: "한국의 미 -건축",
       material: "색동목 안료",
       size: "60×60",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/23.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -319,7 +319,7 @@ export const exhibition: ExhibitionData = {
       title: "결",
       material: "색동목 안료",
       size: "50×70",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/24.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -330,7 +330,7 @@ export const exhibition: ExhibitionData = {
       title: "빗살",
       material: "색동목 안료",
       size: "50×70",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/25.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -341,7 +341,7 @@ export const exhibition: ExhibitionData = {
       title: "관심",
       material: "색동목 안료",
       size: "50×70",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/26.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -352,7 +352,7 @@ export const exhibition: ExhibitionData = {
       title: "파동",
       material: "색동목 안료",
       size: "50×70",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/27.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -363,7 +363,7 @@ export const exhibition: ExhibitionData = {
       title: "파동 1",
       material: "색동목 안료",
       size: "120×80",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/28.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -374,7 +374,7 @@ export const exhibition: ExhibitionData = {
       title: "파동 2",
       material: "색동목 안료",
       size: "60×180",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/29.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -385,7 +385,7 @@ export const exhibition: ExhibitionData = {
       title: "지리산",
       material: "색동목 안료",
       size: "45×60",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/30.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -396,7 +396,7 @@ export const exhibition: ExhibitionData = {
       title: "반가사유",
       material: "색동목 안료",
       size: "72×53",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/31.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -407,7 +407,7 @@ export const exhibition: ExhibitionData = {
       title: "반가사유",
       material: "색동목 안료",
       size: "82×60",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/32.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -418,7 +418,7 @@ export const exhibition: ExhibitionData = {
       title: "여인",
       material: "색동목 안료",
       size: "50×70",
-      year: "2026",
+      year: "2025~2026",
       image: "artworks/33.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)"
@@ -429,7 +429,7 @@ export const exhibition: ExhibitionData = {
       title: "색동목 머릿장",
       material: "색동목 호두나무, 오동나무, 백동",
       size: "95×41×80",
-      year: "2026",
+      year: "2019",
       image: "artworks/34.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)",
@@ -441,7 +441,7 @@ export const exhibition: ExhibitionData = {
       title: "색동목 서안",
       material: "색동목 오동나무",
       size: "100×40×42",
-      year: "2026",
+      year: "2020",
       image: "artworks/35.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)",
@@ -453,7 +453,7 @@ export const exhibition: ExhibitionData = {
       title: "색동목 탁자",
       material: "색동목",
       size: "200×85×72",
-      year: "2026",
+      year: "2019",
       image: "artworks/36.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)",
@@ -465,7 +465,7 @@ export const exhibition: ExhibitionData = {
       title: "색동목 장의자",
       material: "색동목",
       size: "200×40×42",
-      year: "2026",
+      year: "2019",
       image: "artworks/37.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)",
@@ -477,7 +477,7 @@ export const exhibition: ExhibitionData = {
       title: "색동목 탁자장",
       material: "색동목 호도나무 오동나무 무쇠",
       size: "94×40×110",
-      year: "2026",
+      year: "2019",
       image: "artworks/38.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)",
@@ -489,7 +489,7 @@ export const exhibition: ExhibitionData = {
       title: "색동목 좌등",
       material: "색동목, 랭가스 오동남, 백동",
       size: "35×35×110",
-      year: "2026",
+      year: "2019",
       image: "artworks/39.jpg",
       description: "",
       maxHeight: "calc(100vh - 350px)",
