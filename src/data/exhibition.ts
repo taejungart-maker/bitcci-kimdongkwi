@@ -34,8 +34,8 @@ export interface ExhibitionData {
 }
 
 export const exhibition: ExhibitionData = {
-  title: "김동귀 개인전",
-  titleEn: "Kim Dong-Gwi Solo Exhibition",
+  title: "김동귀 색동목전",
+  titleEn: "Kim Dong-Gwi Saekdongmok Exhibition",
   subtitle: "색동목, 시간의 결을 쌓다",
   subtitleEn: "Saekdongmok: Building the Texture of Time",
   period: "2026년 5월 6일 — 5월 11일",
