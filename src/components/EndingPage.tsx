@@ -72,25 +72,45 @@ export default function EndingPage() {
             className="h-[1px] bg-white/30 mx-auto my-8"
           />
 
-          {/* 공방 정보 */}
-          <motion.p
+          {/* 공방 정보 - 상세 연락처 */}
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 2 }}
-            className="text-white/85 text-[21px] leading-relaxed tracking-wider mb-6"
+            className="text-white/85 leading-relaxed tracking-wider mb-6 space-y-4"
             style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
           >
-            웅석공방 · 김동귀목조형 연구소
-            <br />
-            <span className="text-white/65 text-[17px]">경상남도 산청 · 진주</span>
-          </motion.p>
+            {/* 웅석공방 */}
+            <div>
+              <p className="text-[19px] mb-1.5">웅석공방</p>
+              <p className="text-white/65 text-[13px] leading-[1.7]">
+                52242 경남 산청군 단성면 호암로 1325
+              </p>
+              <p className="text-white/65 text-[13px] leading-[1.7]">
+                Tel. 055-973-4118 · Mobile. 010-3862-6321
+              </p>
+            </div>
+
+            {/* 김동귀 목조형 연구소 */}
+            <div>
+              <p className="text-[19px] mb-1.5">김동귀 목조형 연구소</p>
+              <p className="text-white/65 text-[13px] leading-[1.7]">
+                경남 진주시 명석면 진주대로 2563
+              </p>
+            </div>
+
+            {/* 이메일 */}
+            <p className="text-white/70 text-[13px] tracking-[0.15em]">
+              kd6321@naver.com
+            </p>
+          </motion.div>
 
           {/* 전시 정보 */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 2.3 }}
-            className="text-white/75 text-[19px] leading-relaxed space-y-1.5 mb-8"
+            className="text-white/75 text-[15px] leading-relaxed space-y-1 mb-8"
             style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
           >
             <p>{exhibition.period}</p>

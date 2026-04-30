@@ -1,5 +1,4 @@
 import { motion } from 'motion/react';
-import ProfileVignette from './ProfileVignette';
 
 export default function ArtistBioPage() {
   return (
@@ -7,12 +6,6 @@ export default function ArtistBioPage() {
       className="w-full h-full bg-white overflow-y-auto px-6 py-12 relative"
       style={{ touchAction: 'pan-y pinch-zoom' }}
     >
-      {/* 데스크탑 인물 비네팅 (모바일 카드는 motion.div 안 첫 번째 자식으로) */}
-      <ProfileVignette
-        src={`${import.meta.env.BASE_URL}profile.jpg`}
-        alt="김동귀 작가"
-      />
-
       <div className="max-w-2xl mx-auto flex flex-col gap-7 pb-20 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

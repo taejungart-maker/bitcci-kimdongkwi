@@ -63,6 +63,7 @@ export default function ArtworkPage({ artwork }: ArtworkPageProps) {
             maxHeight,
             width: 'auto',
             boxShadow: '0 8px 32px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.06)',
+            filter: artwork.imageFilter,
           }}
           loading="lazy"
         />
@@ -100,7 +101,7 @@ export default function ArtworkPage({ artwork }: ArtworkPageProps) {
           className="w-8 h-[1px] mx-auto mb-3"
           style={{ backgroundColor: accentColor, opacity: 0.5 }}
         />
-        {/* 재료 / 크기 / 연도 (한글, 차분한 톤) */}
+        {/* 재료 / 크기 (한글, 차분한 톤) */}
         <p
           className="text-[12.5px] leading-relaxed tracking-wider"
           style={{
@@ -109,7 +110,18 @@ export default function ArtworkPage({ artwork }: ArtworkPageProps) {
             opacity: 0.7,
           }}
         >
-          {artwork.material} · {artwork.size} · {artwork.year}
+          {artwork.material} · {artwork.size}
+        </p>
+        {/* 연도 (별도 줄) */}
+        <p
+          className="text-[12.5px] leading-relaxed tracking-wider mt-1"
+          style={{
+            fontFamily: "'Noto Sans KR', sans-serif",
+            color: textSecondary,
+            opacity: 0.7,
+          }}
+        >
+          {artwork.year}
         </p>
       </motion.div>
 

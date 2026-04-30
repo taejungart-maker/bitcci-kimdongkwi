@@ -3,6 +3,31 @@ import { motion } from 'motion/react';
 export default function ArtistQuotePage() {
   return (
     <div className="w-full h-full bg-white flex items-center justify-center px-8 py-12 relative overflow-hidden">
+      {/* 작가 이미지 배경 - 전체 화면 + 비네팅 */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        aria-hidden
+      >
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url(${import.meta.env.BASE_URL}profile.jpg)`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            opacity: 0.45,
+          }}
+        />
+        {/* 비네팅 오버레이 - 텍스트 가독성 확보 */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              'radial-gradient(ellipse 75% 75% at 50% 50%, transparent 20%, rgba(255,255,255,0.4) 60%, rgba(255,255,255,0.85) 90%, rgba(255,255,255,1) 100%)',
+          }}
+        />
+      </div>
+
       {/* 배경 장식 - 미세한 색동목 톤 그라데이션 */}
       <div
         className="absolute inset-0 pointer-events-none"
