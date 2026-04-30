@@ -6,12 +6,27 @@ import ArtistNotePage from './components/ArtistNotePage';
 import ArtistQuotePage from './components/ArtistQuotePage';
 import ArtworkPage from './components/ArtworkPage';
 import EndingPage from './components/EndingPage';
+import BannerPreview from './components/BannerPreview';
 import { exhibition } from './data/exhibition';
 
 // cover + artist bio + artist note + artist quote + artworks + ending
 const TOTAL_PAGES = 5 + exhibition.artworks.length;
 
 export default function App() {
+  // URL 해시로 시안 모드 분기
+  const [route, setRoute] = useState(() => window.location.hash);
+
+  useEffect(() => {
+    const onHashChange = () => setRoute(window.location.hash);
+    window.addEventListener('hashchange', onHashChange);
+    return () => window.removeEventListener('hashchange', onHashChange);
+  }, []);
+
+  // #banner: 현수막 시안 모드
+  if (route === '#banner') {
+    return <BannerPreview />;
+  }
+
   return (
     <GlobalErrorBoundary>
       <AppContent />

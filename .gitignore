@@ -26,3 +26,6 @@ dist-ssr
 # 이미지 작업 백업 (트림/교체 전 원본)
 *_original.jpg
 *_original.png
+
+# Exports (대용량 PNG/PDF 결과물 — 로컬에만 보관)
+exports/
