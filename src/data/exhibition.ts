@@ -70,8 +70,7 @@ export const exhibition: ExhibitionData = {
       size: "162×112",
       year: "2025",
       image: "artworks/1.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 2,
@@ -81,8 +80,7 @@ export const exhibition: ExhibitionData = {
       size: "82×82",
       year: "2025",
       image: "artworks/2.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 3,
@@ -92,8 +90,7 @@ export const exhibition: ExhibitionData = {
       size: "60×60",
       year: "2025",
       image: "artworks/3.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 4,
@@ -103,8 +100,7 @@ export const exhibition: ExhibitionData = {
       size: "60×60",
       year: "2025",
       image: "artworks/4.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 5,
@@ -114,8 +110,7 @@ export const exhibition: ExhibitionData = {
       size: "60×60",
       year: "2025",
       image: "artworks/5.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 6,
@@ -125,8 +120,7 @@ export const exhibition: ExhibitionData = {
       size: "60×60",
       year: "2025",
       image: "artworks/6.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 7,
@@ -136,8 +130,7 @@ export const exhibition: ExhibitionData = {
       size: "60×60",
       year: "2025",
       image: "artworks/7.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 8,
@@ -147,8 +140,7 @@ export const exhibition: ExhibitionData = {
       size: "38×38",
       year: "2025",
       image: "artworks/8.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 9,
@@ -158,8 +150,7 @@ export const exhibition: ExhibitionData = {
       size: "38×38",
       year: "2025",
       image: "artworks/9.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 10,
@@ -169,8 +160,7 @@ export const exhibition: ExhibitionData = {
       size: "30×120",
       year: "2025",
       image: "artworks/10.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 11,
@@ -180,8 +170,7 @@ export const exhibition: ExhibitionData = {
       size: "30×120",
       year: "2025",
       image: "artworks/11.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 12,
@@ -191,8 +180,7 @@ export const exhibition: ExhibitionData = {
       size: "132×92",
       year: "2025",
       image: "artworks/12.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 13,
@@ -202,8 +190,7 @@ export const exhibition: ExhibitionData = {
       size: "50×180",
       year: "2025",
       image: "artworks/13.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 14,
@@ -213,8 +200,7 @@ export const exhibition: ExhibitionData = {
       size: "35×35",
       year: "2025",
       image: "artworks/14.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 15,
@@ -224,8 +210,7 @@ export const exhibition: ExhibitionData = {
       size: "35×35",
       year: "2025",
       image: "artworks/15.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 16,
@@ -235,8 +220,7 @@ export const exhibition: ExhibitionData = {
       size: "35×35",
       year: "2025",
       image: "artworks/16.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 17,
@@ -246,8 +230,7 @@ export const exhibition: ExhibitionData = {
       size: "35×35",
       year: "2025",
       image: "artworks/17.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 18,
@@ -257,8 +240,7 @@ export const exhibition: ExhibitionData = {
       size: "50×70",
       year: "2025",
       image: "artworks/18.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 19,
@@ -268,8 +250,7 @@ export const exhibition: ExhibitionData = {
       size: "50×70",
       year: "2025",
       image: "artworks/19.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 20,
@@ -280,7 +261,6 @@ export const exhibition: ExhibitionData = {
       year: "2025",
       image: "artworks/20.jpg",
       description: "",
-      maxHeight: "calc(100vh - 350px)",
       imageFilter: "brightness(1.4) contrast(1.05)"
     },
     {
@@ -291,8 +271,7 @@ export const exhibition: ExhibitionData = {
       size: "60×60",
       year: "2025",
       image: "artworks/21.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 22,
@@ -302,8 +281,7 @@ export const exhibition: ExhibitionData = {
       size: "45×45",
       year: "2025",
       image: "artworks/22.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 23,
@@ -313,8 +291,7 @@ export const exhibition: ExhibitionData = {
       size: "60×60",
       year: "2025",
       image: "artworks/23.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 24,
@@ -324,8 +301,7 @@ export const exhibition: ExhibitionData = {
       size: "50×70",
       year: "2025",
       image: "artworks/24.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 25,
@@ -335,8 +311,7 @@ export const exhibition: ExhibitionData = {
       size: "50×70",
       year: "2025",
       image: "artworks/25.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 26,
@@ -346,8 +321,7 @@ export const exhibition: ExhibitionData = {
       size: "50×70",
       year: "2025",
       image: "artworks/26.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 27,
@@ -357,8 +331,7 @@ export const exhibition: ExhibitionData = {
       size: "50×70",
       year: "2025",
       image: "artworks/27.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 28,
@@ -368,8 +341,7 @@ export const exhibition: ExhibitionData = {
       size: "120×80",
       year: "2025",
       image: "artworks/28.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 29,
@@ -379,8 +351,7 @@ export const exhibition: ExhibitionData = {
       size: "60×180",
       year: "2025",
       image: "artworks/29.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 30,
@@ -390,8 +361,7 @@ export const exhibition: ExhibitionData = {
       size: "45×60",
       year: "2025",
       image: "artworks/30.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 31,
@@ -401,8 +371,7 @@ export const exhibition: ExhibitionData = {
       size: "72×53",
       year: "2025",
       image: "artworks/31.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 32,
@@ -412,8 +381,7 @@ export const exhibition: ExhibitionData = {
       size: "82×60",
       year: "2025",
       image: "artworks/32.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 33,
@@ -423,8 +391,7 @@ export const exhibition: ExhibitionData = {
       size: "50×70",
       year: "2025",
       image: "artworks/33.jpg",
-      description: "",
-      maxHeight: "calc(100vh - 350px)"
+      description: ""
     },
     {
       id: 34,
@@ -435,7 +402,6 @@ export const exhibition: ExhibitionData = {
       year: "2025",
       image: "artworks/34.jpg",
       description: "",
-      maxHeight: "calc(100vh - 350px)",
       darkBg: true
     },
     {
@@ -447,7 +413,6 @@ export const exhibition: ExhibitionData = {
       year: "2025",
       image: "artworks/35.jpg",
       description: "",
-      maxHeight: "calc(100vh - 350px)",
       darkBg: true
     },
     {
@@ -459,7 +424,6 @@ export const exhibition: ExhibitionData = {
       year: "2025",
       image: "artworks/36.jpg",
       description: "",
-      maxHeight: "calc(100vh - 350px)",
       darkBg: true
     },
     {
@@ -471,7 +435,6 @@ export const exhibition: ExhibitionData = {
       year: "2025",
       image: "artworks/37.jpg",
       description: "",
-      maxHeight: "calc(100vh - 350px)",
       darkBg: true
     },
     {
@@ -483,7 +446,6 @@ export const exhibition: ExhibitionData = {
       year: "2025",
       image: "artworks/38.jpg",
       description: "",
-      maxHeight: "calc(100vh - 350px)",
       darkBg: true
     },
     {
@@ -495,7 +457,6 @@ export const exhibition: ExhibitionData = {
       year: "2025",
       image: "artworks/39.jpg",
       description: "",
-      maxHeight: "calc(100vh - 350px)",
       darkBg: true
     }
   ]

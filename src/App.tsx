@@ -318,8 +318,8 @@ function AppContent() {
         onTouchEnd={(e) => { e.preventDefault(); toggleBgm(e); }}
         className={`absolute top-5 right-5 z-50 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
           currentBgIsDark
-            ? 'bg-white/15 backdrop-blur-sm text-white/70 hover:bg-white/25'
-            : 'bg-black/8 backdrop-blur-sm text-gray-600 hover:bg-black/15'
+            ? 'bg-white/25 text-white/80 hover:bg-white/35'
+            : 'bg-black/15 text-gray-700 hover:bg-black/25'
         }`}
       >
         {bgmPlaying ? (

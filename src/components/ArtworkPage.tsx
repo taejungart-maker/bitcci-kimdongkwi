@@ -8,8 +8,10 @@ interface ArtworkPageProps {
 
 export default function ArtworkPage({ artwork }: ArtworkPageProps) {
   const clipPath = artwork.clipPath || "inset(0% 0% 0% 0%)";
-  const maxWidth = artwork.maxWidth || '85vw';
-  const maxHeight = artwork.maxHeight || '42vh';
+  const hasDescription = !!artwork.description;
+  // 설명 있으면 위쪽 50%만, 없으면 캡션 제외 전체를 이미지에 할당
+  const maxWidth = artwork.maxWidth || (hasDescription ? '90vw' : '96vw');
+  const maxHeight = artwork.maxHeight || (hasDescription ? '45vh' : 'calc(100vh - 170px)');
 
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScroll, setCanScroll] = useState(false);
@@ -51,17 +53,20 @@ export default function ArtworkPage({ artwork }: ArtworkPageProps) {
         initial={{ opacity: 0, scale: 0.97 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="flex items-center justify-center shrink-0 px-4 pt-7 pb-4"
+        className={`flex items-center justify-center px-2 pt-3 pb-2 ${
+          hasDescription ? 'shrink-0' : 'flex-1 min-h-0'
+        }`}
       >
         <img
           src={`${import.meta.env.BASE_URL}${artwork.image}`}
           alt={artwork.title}
-          className="h-auto object-contain"
+          className="object-contain"
           style={{
             clipPath,
             maxWidth,
             maxHeight,
             width: 'auto',
+            height: 'auto',
             boxShadow: '0 8px 32px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.06)',
             filter: artwork.imageFilter,
           }}
@@ -74,12 +79,12 @@ export default function ArtworkPage({ artwork }: ArtworkPageProps) {
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.25 }}
-        className="w-full text-center shrink-0 px-5 pt-1 pb-1"
+        className="w-full text-center shrink-0 px-5 pt-1 pb-3"
       >
         {/* 작가명 (작게, 위) */}
         {artwork.artist && (
           <p
-            className="text-[12px] tracking-[0.5em] mb-3 opacity-70"
+            className="text-[11px] tracking-[0.5em] mb-2 opacity-70"
             style={{ fontFamily: "'Noto Sans KR', sans-serif", color: textPrimary }}
           >
             {artwork.artist}
@@ -87,7 +92,7 @@ export default function ArtworkPage({ artwork }: ArtworkPageProps) {
         )}
         {/* 제목 (인용구 스타일 - Noto Serif italic, 강조) */}
         <p
-          className="text-[19px] md:text-[21px] leading-relaxed mb-3 whitespace-pre-line tracking-wide"
+          className="text-[17px] md:text-[19px] leading-snug mb-2 whitespace-pre-line tracking-wide"
           style={{
             fontFamily: "'Noto Serif', 'Noto Sans KR', serif",
             fontStyle: 'italic',
@@ -98,30 +103,19 @@ export default function ArtworkPage({ artwork }: ArtworkPageProps) {
         </p>
         {/* 보라 라인 (인용구 페이지와 통일) */}
         <div
-          className="w-8 h-[1px] mx-auto mb-3"
+          className="w-8 h-[1px] mx-auto mb-2"
           style={{ backgroundColor: accentColor, opacity: 0.5 }}
         />
-        {/* 재료 / 크기 (한글, 차분한 톤) */}
+        {/* 재료 / 크기 · 연도 (한 줄로 통합) */}
         <p
-          className="text-[12.5px] leading-relaxed tracking-wider"
+          className="text-[11.5px] leading-relaxed tracking-wider"
           style={{
             fontFamily: "'Noto Sans KR', sans-serif",
             color: textSecondary,
             opacity: 0.7,
           }}
         >
-          {artwork.material} · {artwork.size}
-        </p>
-        {/* 연도 (별도 줄) */}
-        <p
-          className="text-[12.5px] leading-relaxed tracking-wider mt-1"
-          style={{
-            fontFamily: "'Noto Sans KR', sans-serif",
-            color: textSecondary,
-            opacity: 0.7,
-          }}
-        >
-          {artwork.year}
+          {artwork.material} · {artwork.size} · {artwork.year}
         </p>
       </motion.div>
 
@@ -170,9 +164,7 @@ export default function ArtworkPage({ artwork }: ArtworkPageProps) {
             />
           )}
         </div>
-      ) : (
-        <div className="flex-1" />
-      )}
+      ) : null}
     </div>
   );
 }
