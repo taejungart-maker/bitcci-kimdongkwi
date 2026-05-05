@@ -81,15 +81,6 @@ export default function ArtworkPage({ artwork }: ArtworkPageProps) {
         transition={{ duration: 0.5, delay: 0.25 }}
         className="w-full text-center shrink-0 px-5 pt-1 pb-3"
       >
-        {/* 작가명 (작게, 위) */}
-        {artwork.artist && (
-          <p
-            className="text-[11px] tracking-[0.5em] mb-2 opacity-70"
-            style={{ fontFamily: "'Noto Sans KR', sans-serif", color: textPrimary }}
-          >
-            {artwork.artist}
-          </p>
-        )}
         {/* 제목 (인용구 스타일 - Noto Serif italic, 강조) */}
         <p
           className="text-[17px] md:text-[19px] leading-snug mb-2 whitespace-pre-line tracking-wide"
