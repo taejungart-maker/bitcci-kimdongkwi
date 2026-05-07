@@ -27,5 +27,13 @@ dist-ssr
 *_original.jpg
 *_original.png
 
+# 작가 갱신 작업 백업·삭제 폴더 (로컬 보관용)
+public/artworks/_backup_*/
+public/artworks/_deleted_*/
+
+# 로컬 검수용 스크립트
+_inspect_*.cjs
+_record_*.cjs
+
 # Exports (대용량 PNG/PDF 결과물 — 로컬에만 보관)
 exports/

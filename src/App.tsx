@@ -2,6 +2,7 @@ import { useState, useRef, useEffect, useMemo } from 'react';
 import { GlobalErrorBoundary } from './components/GlobalErrorBoundary';
 import CoverPage from './components/CoverPage';
 import ArtistBioPage from './components/ArtistBioPage';
+import ArtistPhotosPage from './components/ArtistPhotosPage';
 import ArtistNotePage from './components/ArtistNotePage';
 import ArtistQuotePage from './components/ArtistQuotePage';
 import ArtworkPage from './components/ArtworkPage';
@@ -9,8 +10,8 @@ import EndingPage from './components/EndingPage';
 import BannerPreview from './components/BannerPreview';
 import { exhibition } from './data/exhibition';
 
-// cover + artist bio + artist note + artist quote + artworks + ending
-const TOTAL_PAGES = 5 + exhibition.artworks.length;
+// cover + artist bio + artist photos + artist note + artist quote + artworks + ending
+const TOTAL_PAGES = 6 + exhibition.artworks.length;
 
 export default function App() {
   // URL 해시로 시안 모드 분기
@@ -281,19 +282,24 @@ function AppContent() {
           {isVisible(1) && <ArtistBioPage />}
         </div>
 
-        {/* Page 3: 작가 노트 */}
+        {/* Page 3: 작가 사진 (작가의 시간) */}
         <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
-          {isVisible(2) && <ArtistNotePage />}
+          {isVisible(2) && <ArtistPhotosPage />}
         </div>
 
-        {/* Page 4: 작가 시그니처 인용구 */}
+        {/* Page 4: 작가 노트 */}
         <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
-          {isVisible(3) && <ArtistQuotePage />}
+          {isVisible(3) && <ArtistNotePage />}
+        </div>
+
+        {/* Page 5: 작가 시그니처 인용구 */}
+        <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
+          {isVisible(4) && <ArtistQuotePage />}
         </div>
 
         {/* Artwork Pages */}
         {exhibition.artworks.map((artwork, index) => {
-          const pageIndex = index + 4;
+          const pageIndex = index + 5;
           // darkBg가 아닌 작품은 홀짝으로 녹색/보라색 배경 자동 배정
           const themed = {
             ...artwork,
@@ -339,7 +345,7 @@ function AppContent() {
 
       {/* Page Indicator - 배경에 맞춰 색상 변경 */}
       <div
-        className={`absolute bottom-6 left-1/2 -translate-x-1/2 z-50 px-4 py-1.5 rounded-full shadow-sm transition-all duration-500 ${
+        className={`absolute bottom-6 right-5 z-50 px-4 py-1.5 rounded-full shadow-sm transition-all duration-500 ${
           showControls ? 'opacity-80' : 'opacity-0'
         } ${
           currentBgIsDark

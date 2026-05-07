@@ -2,11 +2,35 @@ import { motion } from 'motion/react';
 
 export default function ArtistBioPage() {
   return (
-    <div
-      className="w-full h-full bg-white overflow-y-auto px-6 py-12 relative"
-      style={{ touchAction: 'pan-y pinch-zoom' }}
-    >
-      <div className="max-w-2xl mx-auto flex flex-col gap-7 pb-20 relative z-10">
+    <div className="w-full h-full bg-white relative overflow-hidden">
+      {/* 배경 — 반가사유 1 (id 31), 화면에 고정 */}
+      <div className="absolute inset-0 pointer-events-none z-0" aria-hidden>
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url(${import.meta.env.BASE_URL}artworks/31.jpg)`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            opacity: 0.5,
+          }}
+        />
+        {/* 흰색 부드러운 오버레이 — 가독성 보강 */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              'radial-gradient(ellipse at center, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.4) 60%, rgba(255,255,255,0.7) 100%)',
+          }}
+        />
+      </div>
+
+      {/* 스크롤 영역 — 텍스트만 스크롤됨 */}
+      <div
+        className="absolute inset-0 overflow-y-auto px-6 py-12 z-10"
+        style={{ touchAction: 'pan-y pinch-zoom' }}
+      >
+        <div className="max-w-2xl mx-auto flex flex-col gap-7 pb-20 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -196,6 +220,7 @@ export default function ArtistBioPage() {
           </section>
 
         </motion.div>
+        </div>
       </div>
     </div>
   );
