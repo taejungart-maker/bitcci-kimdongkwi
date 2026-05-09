@@ -59,7 +59,7 @@ export default function ArtistPhotosPage() {
               >
                 <div className="relative overflow-hidden rounded-sm shadow-md bg-white">
                   <img
-                    src={`${BASE}photos/${p.id}.jpg`}
+                    src={`${BASE}photos/${p.id}.jpg?v=2`}
                     alt={p.caption}
                     className="w-full h-auto block"
                     loading="lazy"
