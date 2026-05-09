@@ -14,6 +14,9 @@ const photos = [
   { id: 9,  caption: '색동의 흐름' },
   { id: 10, caption: '작품 사이에서' },
   { id: 11, caption: '색동의 호흡' },
+  { id: 12, caption: '색동의 시간이 깃든 자리' },
+  { id: 13, caption: '한 점 한 점 빚어내는 손' },
+  { id: 14, caption: '전시의 한가운데서' },
 ];
 
 export default function ArtistPhotosPage() {
