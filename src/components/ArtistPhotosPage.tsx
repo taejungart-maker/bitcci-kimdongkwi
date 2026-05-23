@@ -18,6 +18,8 @@ const photos = [
   { id: 13, caption: '한 점 한 점 빚어내는 손' },
   { id: 14, caption: '전시의 한가운데서' },
   { id: 15, caption: '결을 짚어내는 손' },
+  { id: 16, caption: '공방의 한 컷' },
+  { id: 17, caption: '결의 시간' },
 ];
 
 export default function ArtistPhotosPage() {
@@ -63,7 +65,7 @@ export default function ArtistPhotosPage() {
               >
                 <div className="relative overflow-hidden rounded-sm shadow-md bg-white">
                   <img
-                    src={`${BASE}photos/${p.id}.jpg?v=2`}
+                    src={`${BASE}photos/${p.id}.jpg?v=3`}
                     alt={p.caption}
                     className="w-full h-auto block"
                     loading="lazy"
